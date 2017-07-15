@@ -98,10 +98,14 @@ textarea {
         list-style: none;
         margin-top: 1em;
         margin-bottom: 1em;
-    }
-
+        }
+.centre {
+    text-align: center;
+}
 
 .card{
+    text-align: center;
+    width: 60%;
     margin-top: 3em;
 }
 
