@@ -15,7 +15,7 @@ var images = document.getElementsByClassName("slider");
 
 // Fonction 
 function cacheImages (){
-    for (){
+    for (var i = 0; ){
 
         
     }
