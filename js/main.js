@@ -1,54 +1,39 @@
 // Variables 
 
+
 // var images = document.getElementsByClassName("slider");
+// var tour = 0;
+// // FUNCTION
+
 
 var images = document.getElementsByClassName("slider");
 var turn = 0;
 // FUNCTION
 
-function cacheImages (){ for (i=0 ; i<imgs.length ;i++){
-    imgs[i].style.display="none";
+function cacheimages (){
+  for (i=0 ; i<images.length ;i++){
+    images[i].style.display="none";
   } 
 }
 
 function selection (index){
- imgs[index].style.display="block";
+ images[index].style.display="block";
 }
 
+function lecteur (){
+  setInterval(function(){
+    turn++;
+    cacheimages();
+    selection(turn);
+    }
+    ,1000);
+}
 
- 
-
-// var images = document.getElementsByClassName("slider"); 
-// // FUNCTION
-
-// function cacheImages () {
-// for (i = 0; i < images.length; i++ ) {
-//         imgs[i].style.display ="none";
-// }
-// }
-
+// SCRIPT
 
 
+cacheimages();
 
+selection(turn);
 
-
-// // Fonction 
-
-
-
-
-
-
-
-
-
-// // Script
-
-// cacheImages ();
-
-
-
-
-
-
-
+lecteur();
