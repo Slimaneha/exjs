@@ -24,14 +24,15 @@ function selection (index){
 
 function lecteur (){
   setInterval(function(){
-    turn++;
+    if ( turn > images.length -1)  {
+      
+      turn=0 ;
+    }   turn++;
     cacheimages();
     selection(turn);
-    if (turn+1 >images.length){
-      turn = 0
+  
     }
-    }
-    ,5000);
+    ,1000);
     
 }
 
@@ -41,6 +42,6 @@ function lecteur (){
 
 cacheimages();
 
-selection(turn);
+// selection(turn);
 
 lecteur();
