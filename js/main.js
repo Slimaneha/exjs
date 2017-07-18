@@ -18,6 +18,8 @@ function cacheimages (){
 
 function selection (index){
  images[index].style.display="block";
+ 
+ 
 }
 
 function lecteur (){
@@ -25,9 +27,14 @@ function lecteur (){
     turn++;
     cacheimages();
     selection(turn);
+    if (turn+1 >images.length){
+      turn = 0
     }
-    ,1000);
+    }
+    ,5000);
+    
 }
+
 
 // SCRIPT
 
